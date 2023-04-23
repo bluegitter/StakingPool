@@ -45,7 +45,7 @@ contract('StakingPool', (accounts) => {
         assert(balanceB.eq(new BN(2)), "Incorrect staked amount for userB");
 
         // Withdraw tokens for userB
-        await stakingPool.withdraw(2, { from: userB });
+        await stakingPool.withdraw(3, { from: userB });
 
         // Check new staked amounts
         assert((await stakingPool.balanceOf(userA)).eq(new BN(20)), "Incorrect staked amount for userA after withdrawal");
