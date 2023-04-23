@@ -24,6 +24,15 @@ npm install
 truffle compile
 ```
 
+### Deploy stETH Contract
+at https://github.com/bluegitter/stETH-Contract, execute command to deploy stETH contract, get stETH token contract address, then modify  rewardsToken and stakingToken as stETH address in migrations/2_deploy_contracts.js.
+
+```
+    const rewardsToken = '0x7f89bC9302A5B04859102BFe5A39ec7e600F12Bf'; // 提供奖励代币合约地址
+    const stakingToken = '0x7f89bC9302A5B04859102BFe5A39ec7e600F12Bf'; // 提供质押代币合约地址
+```
+
+
 ### Deploy Contract
 ```
 truffle migrate --reset --network development
