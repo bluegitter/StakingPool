@@ -16,6 +16,7 @@ modify truffle-config.js
 
 ### Install nodejs requirements 
 ```
+npm install -g truffle 
 npm install
 ```
 
