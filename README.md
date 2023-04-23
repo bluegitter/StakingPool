@@ -32,4 +32,12 @@ truffle migrate --reset --network development
 ## Test
 ```
 truffle test
+
+  Contract: StakingPool
+totalSupply : 1000000000000000000000000
+staked amount for userA, 20
+    ✔ should allow users to stake and withdraw stETH correctly (1254ms)
+
+
+  1 passing (1s)
 ```
